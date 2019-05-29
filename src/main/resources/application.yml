@@ -1,0 +1,5 @@
+micronaut:
+  application:
+    name: micronaut-server
+  server:
+    port: 9080
