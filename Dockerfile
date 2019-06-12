@@ -17,7 +17,7 @@ RUN mvn package -DskipTests
 FROM adoptopenjdk/openjdk8:jdk8u202-b08-alpine-slim
 
 # Copy the jar to the production image from the builder stage.
-COPY --from=builder /app/target/micronaut-0.1.jar /micronaut-0.1.jar
+COPY --from=builder /app/target/micronaut-basic-1.0-SNAPSHOT.jar /micronaut-basic-1.0-SNAPSHOT.jar
 
 # Run the web service on container startup.
-CMD ["java","-jar","/micronaut-0.1.jar"]
+CMD ["java","-jar","/micronaut-basic-1.0-SNAPSHOT.jar"]
