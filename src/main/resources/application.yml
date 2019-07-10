@@ -2,4 +2,4 @@ micronaut:
   application:
     name: micronaut-server
   server:
-    port: 9080
+    port: ${PORT:8000}
