@@ -9,6 +9,6 @@ public class GreetingServiceTest {
     @Test
     public void getGreeting() {
         GreetingService service = new GreetingServiceMicronaut();
-        Assert.assertThat(service.getGreeting(), IsEqual.equalTo("Micronaut salutes you! "));
+        Assert.assertThat(service.getGreeting(), IsEqual.equalTo("Springboot salutes you! "));
     }
 }
